@@ -10,9 +10,9 @@ package com.tomseysdavies.ember.demos.bunnies.commands
 	import com.tomseysdavies.ember.demos.bunnies.systems.RenderSystem;
 	import com.tomseysdavies.ember.demos.bunnies.systems.nodes.RendererNode;
 	import com.tomseysdavies.ember.demos.bunnies.systems.nodes.SpatialNode;
-	import com.tomseysdavies.ember.entitySystem.api.IEntities;
+	import com.tomseysdavies.ember.entitySystem.api.IEntityManager;
 	import com.tomseysdavies.ember.entitySystem.api.IEntity;
-	import com.tomseysdavies.ember.entitySystem.api.ISystems;
+	import com.tomseysdavies.ember.entitySystem.api.ISystemManager;
 	
 	import flash.display.BitmapData;
 	import flash.geom.Point;
@@ -29,10 +29,10 @@ package com.tomseysdavies.ember.demos.bunnies.commands
 		private const _bunnyAsset:BitmapData = new BunnyAsset().bitmapData;
 		
 		[Inject]
-		public var entities:IEntities;
+		public var entities:IEntityManager;
 		
 		[Inject]
-		public var system:ISystems;
+		public var system:ISystemManager;
 		
 		[Inject]
 		public var injector:Injector;
