@@ -44,8 +44,8 @@ package com.tomseysdavies.ember.demos.bunnies.commands
 			injector.map(Tick).asSingleton();
 			injector.map(Pause).asSingleton();
 			// creates the families and make them ready for injection
-			entities.requestFamiliy(RendererNode);
-			entities.requestFamiliy(SpatialNode);
+			entities.requestFamily(RendererNode);
+			entities.requestFamily(SpatialNode);
 			// create all the systems
 			system.add(RenderSystem);
 			system.add(BounceSystem);
